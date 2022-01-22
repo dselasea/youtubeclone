@@ -9,5 +9,51 @@ html {
 }
 
 body {
-    background: blue;
+    font-size: 1.5rem;
+}
+
+button {
+    background: #FF0000;
+    color: #fff;
+    border: 0;
+    padding: 1rem 1.5rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 1190px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+nav .nav__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .section__video {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container .section__video--details {
+    padding: 1rem 0;
+}
+
+.container .section__video--details h2 {
+    margin: 1rem 0;
+}
+
+.container .section__content--author {
+    padding: 1rem 0;
+}
+
+section .container .section__video--comments div {
+    margin: 1rem 0;
+}
+
+@media (min-width: 798px ){
+    main {
+        display: flex;
+    }
 }
