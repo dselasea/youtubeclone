@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +12,11 @@ html {
 
 body {
     font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    color: #606060;
 }
 
 button {
@@ -17,39 +24,91 @@ button {
     color: #fff;
     border: 0;
     padding: 1rem 1.5rem;
+    cursor: pointer;
+    border-radius: 2px;
 }
 
 .container {
     width: 100%;
     max-width: 1190px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 0.5rem 3rem;
 }
 
 nav .nav__container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex: 1;
 }
 
-.container .section__video {
+nav .logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+nav .search, input[type="text"] {
+    width: 70%;
+    justify-self: center;
+}
+
+nav input[type="text"] {
+    padding: 0.85rem;
+}
+
+nav .profile img {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+}
+
+section .container .section__video {
     width: 100%;
     margin: 0 auto;
 }
 
-.container .section__video--details {
+section .container .section__content--channel {
+    padding-right: 7rem;
+}
+
+section .container .section__video--details {
     padding: 1rem 0;
 }
 
-.container .section__video--details h2 {
+section .container .section__video--details h2 {
     margin: 1rem 0;
 }
 
-.container .section__content--author {
+section .container .section__content--author {
     padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+section .container .section__video--comments {
+    margin-top: 5rem;
 }
 
 section .container .section__video--comments div {
     margin: 1rem 0;
+}
+
+section .container .section__video--comments div h3,
+section .container .section__video--comments div p,
+section .container .section__content--channel p {
+    font-size: 1.2rem;
+}
+
+aside .video {
+    display: flex;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+}
+
+aside .video .content--text {
+    margin-left: 1rem;
+    font-size: 1.1rem;
 }
 
 @media (min-width: 798px ){
