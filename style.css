@@ -30,16 +30,18 @@ button {
 
 .container {
     width: 100%;
-    max-width: 1190px;
+    /* max-width: 1190px; */
     margin: 0 auto;
     padding: 0.5rem 3rem;
+}
+
+nav {
 }
 
 nav .nav__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex: 1;
 }
 
 nav .logo img {
@@ -65,6 +67,19 @@ nav .profile img {
 section .container .section__video {
     width: 100%;
     margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+section .container .section__video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
 }
 
 section .container .section__content--channel {
@@ -103,12 +118,12 @@ aside .video {
     display: flex;
     font-size: 1rem;
     margin-bottom: 1rem;
-    justify-content: space-between;
 }
 
 aside .video .content--text {
-    margin-left: 1rem;
+    padding: 0 0 0 1.5rem;
     font-size: 1.1rem;
+    justify-items: flex-end;
 }
 
 @media (min-width: 798px ){
