@@ -88,6 +88,22 @@ section .container .section__content--channel {
 
 section .container .section__video--details {
     padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+section .container .section__video--icons i {
+    margin-left: 2.75rem;
+    padding-right: 1rem;
+    display: none;
+}
+
+section .container .section__video--icons span {
+    display: none;
+}
+
+section .container .section__video--icons i:hover {
+    cursor: pointer;
 }
 
 section .container .section__video--details h2 {
@@ -125,7 +141,7 @@ aside .video .content--text {
     font-size: 1.1rem;
 }
 
-@media (min-width: 798px ){
+@media (min-width: 1042px ){
     main {
         display: flex;
     }
@@ -133,4 +149,12 @@ aside .video .content--text {
     aside .container {
         padding-left: 0;
     }
+
+    section .container .section__video--icons i {
+    display: inline-block;
+}
+
+    section .container .section__video--icons span {
+    display: inline-block;
+}
 }
